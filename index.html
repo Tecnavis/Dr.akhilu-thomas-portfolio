@@ -26,21 +26,61 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <style>
-     /* Media query for mobile devices */
-     @media (max-width: 767px) {
-        .single-cat {
-            padding: 20px;
-            text-align: center;
+    @media only screen and (max-width: 767px) {
+            .col-lg-3, .col-md-6, .col-xs-6 {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+            .cat-icon img {
+                max-width: 100%;
+                height: auto;
+            }
+            .about-font-img{
+                display: none;
+            }
+            .abc{
+                min-height:150px ;
+            }
+            .abc .cat-cap{
+                margin-top: -50px;
+            }
+            .slider-area{
+                background-size:cover;
+            }
+        }
+        .why-list{
+            margin-left: 30px;
+            
+        }
+       .why-list ul {
+        display: table-row;
+        list-style: none;
         }
 
-        .cat-icon {
-            width: 100%;
-            height: 150px;
-            border-radius: 10px;
-            overflow: hidden;
-            margin-bottom: 15px; /* Add margin between items */
+        .why-list li {
+        display: table-row;
+        color: black;
         }
-    }
+        
+        .why-list li::before {
+        display: table-cell;
+        text-align: right;
+        content: "+";
+        font-size: 2em;
+        font-weight: bold;
+        color: #00b5bd;
+        padding-right: 12px;
+        }
+        .why-list {
+        width: 80%;
+        }
+
+        .why-list ul {
+        margin: 0;
+        padding: 0;
+        }
+
+
  
 </style>
 </head>
@@ -114,7 +154,7 @@
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-xl-7 col-lg-8 col-md-10 ">
-                             <div class="hero-wrapper" style="margin-top: -130px;">
+                             <div class="hero-wrapper">
                                 <!-- Video icon -->
                                 <div class="video-icon">
                                     <a class="popup-video btn-icon" href="https://www.youtube.com/embed/aEtw_R6XEkc?si=GVUqed52UOthyjLJ" data-animation="bounceIn" data-delay=".4s">
@@ -139,7 +179,7 @@
                          <div class="hero-wrapper" style="margin-bottom: 50px;">
                             <!-- Video icon -->
                             <div class="video-icon">
-                                <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0" data-animation="bounceIn" data-delay=".4s">
+                                <a class="popup-video btn-icon" href="https://youtu.be/Z7mw9avlEGw?feature=shared" data-animation="bounceIn" data-delay=".4s">
                                     <i class="fas fa-play"></i>
                                 </a>
                             </div>
@@ -174,7 +214,7 @@
                         life you love!</h2>
                     </div>
                     <p class="pera-top mb-40">Almost before we knew it, we had left the ground</p>
-                    <p class="pera-bottom mb-30">Mrs. Akhilu Thomas, a dedicated counselling psychologist in Kochi, Kerala, holds extensive expertise in couple counselling, premarital counselling, and adolescent issues, boasting a decade of experience. Her personalized approach effectively addresses diverse mental health concerns such as anxiety, depression, stress, trauma, and relationship struggles. Passionate about enhancing mental well-being, she fosters a compassionate, non-judgmental environment for individuals to open up and discover their true value. Mrs. Thomas empowers clients to gain insights into their thoughts, emotions, and behaviors while developing coping strategies for improved mental wellness.
+                    <p class="pera-bottom mb-30" style="color: black;">Mrs. Akhilu Thomas, a dedicated counselling psychologist in Kochi, Kerala, holds extensive expertise in couple counselling, premarital counselling, and adolescent issues, boasting a decade of experience. Her personalized approach effectively addresses diverse mental health concerns such as anxiety, depression, stress, trauma, and relationship struggles. Passionate about enhancing mental well-being, she fosters a compassionate, non-judgmental environment for individuals to open up and discover their true value. Mrs. Thomas empowers clients to gain insights into their thoughts, emotions, and behaviors while developing coping strategies for improved mental wellness.
                         </p>
                     <!-- <div class="icon-about">
                      <img src="assets/img/icon/about1.svg" alt="" class=" mr-20">
@@ -189,23 +229,24 @@
 
 <div class="about-area2">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-12 text-center"> <!-- Set the column width to 12 for full width and use text-center class -->
-                <div class="section-tittle mb-35">
-                    <h2>why choose me!</h2>
+        <div class="row align-items-left">
+            <div class="col-lg-12"> <!-- Set the column width to 12 for full width and use text-center class -->
+                <div class="section-tittle mb-35 text-center" >
+                    <h2 style="color: #00b5bd;">why choose me!</h2>
                 </div>
-                <p class="pera-top mb-40">Almost before we knew it, we had left the ground</p>
-                <p class="pera-bottom mb-30">
-                    Akhilu has over 10 years of experience as a psychologist and she is the Managing director at Mind touch counsellors Pvt Ltd 
-                    -She is the premarital counselling faculty of Kerala Government Minority Welfare Department (2017- till date)
-                    Had worked as the Guest Faculty of Psychological Medicine and Law at NUALS, Kochi (2021 to 2023)
-                    -She offered counselling services for the victims of government care homes. She worked as a consultant psychologist with Nirbhaya Cell Ernakulum district, for sexually abused children. (2014-2015)
-                    She had previous experiences as Psychologist at Seethalayam project of Homeopathic Department, Kerala state (2015 -2017)
-                    She associated with Vimukthi project of the Excise Department of Kerala state. (2018)
-                    She had experience as a Corporate Psychologist at TCS kochi (2019-2020) 
-                    she associated with many online platforms for helping the needy. 
-                    She handles more than 1000+ training programmes on various topics pertaining to mental health.
-                </p>
+                <div class="why-list">
+                <ul >
+                    <li><p>Over 10 years of experience as a psychologist</p></li>
+                    <li><p>Premarital Counselling Faculty, Kerala Government Minority Welfare Department (2017-present)</p></li>
+                    <li><p>Guest Faculty of Psychological Medicine and Law at NUALS, Kochi (2021-2023)</p></li>
+                    <li><p>Consultant Psychologist with Nirbhaya Cell Ernakulum district (2014-2015)</p></li>
+                    <li><p>Psychologist at Seethalayam project of Homeopathic Department, Kerala state (2015-2017)</p></li>
+                    <li><p>Associated with Vimukthi project of the Excise Department of Kerala state (2018)</p></li>
+                    <li><p>Corporate Psychologist at TCS Kochi (2019-2020)</p></li>
+                    <li><p>Associated with many online platforms for helping the needy</p></li>
+                    <li><p>Handles more than 1000+ training programs on various topics pertaining to mental health</p></li>
+                </ul>
+            </div>
             </div>
         </div>
     </div>
@@ -223,7 +264,7 @@
                 <div class="col-xl-7 col-lg-9 col-md-8">
                     <div class="wantToWork-caption wantToWork-caption2">
                         <h2>Serenity Psychological <br> Services</h2>
-                        <p>Serenity Psychological Services, a cornerstone of my personal portfolio, offers compassionate and tailored mental health support, empowering individuals to navigate life's challenges with resilience and well-being.</p>
+                        <p style="font-size:medium;">Serenity Psychological Services, a cornerstone of my personal portfolio, offers compassionate and tailored mental health support, empowering individuals to navigate life's challenges with resilience and well-being.</p>
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-3 col-md-4">
@@ -240,20 +281,20 @@
 <section class="team-area pb-top" >
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="col-lg-3 col-md-6 col-sm-4">
                 <div class="single-cat text-center mb-30">
-                    <div class="cat-icon" style="width: 250px;height: 250px;border-radius: 50%;overflow: hidden;">
-                        <img src="assets/img/gallery/image1.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                    <div class="cat-icon" style="position: relative; width: 250px;height: 250px; border-radius:50%; overflow: hidden;">
+                        <img src="assets/img/gallery/image1.jpg" style="width: 100%;display: block;" alt="">
                     </div>
                     <div class="cat-cap text-center">
                         <h2><a href="#">Stress</a></h2>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="col-lg-3 col-md-6 col-sm-4">
                 <div class="single-cat text-center mb-30">
-                    <div class="cat-icon" style="width: 250px;height: 250px;border-radius: 50%;overflow: hidden;">
-                        <img src="assets/img/gallery/image2.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                    <div class="cat-icon" style="position: relative; width: 250px;height: 250px; border-radius:50%; overflow: hidden;">
+                        <img src="assets/img/gallery/image2.jpg" style="width: 100%;display: block;" alt="">
                     </div>
                     <div class="cat-cap">
                         <h2><a href="#">Depression</a></h2>
@@ -261,20 +302,20 @@
                 </div>
             </div>
     
-            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="col-lg-3 col-md-6 col-xs-6">
                 <div class="single-cat text-center mb-30">
-                    <div class="cat-icon" style="width: 250px;height: 250px;border-radius: 50%;overflow: hidden;">
-                        <img src="assets/img/gallery/image3.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                    <div class="cat-icon" style="position: relative; width: 250px;height: 250px; border-radius:50%; overflow: hidden;">
+                        <img src="assets/img/gallery/image3.jpg" style="width: 100%;display: block;" alt="">
                     </div>
                     <div class="cat-cap">
                         <h2><a href="#">Anxiety</a></h2>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="col-lg-3 col-md-6 col-xs-6">
                 <div class="single-cat text-center mb-30">
-                    <div class="cat-icon" style="width: 250px;height: 250px;border-radius: 50%;overflow: hidden;">
-                        <img src="assets/img/gallery/image 4.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                    <div class="cat-icon" style="position: relative; width: 250px;height: 250px; border-radius:50%; overflow: hidden;">
+                        <img src="assets/img/gallery/image5.jpg" style="width: 100%;display: block;" alt="">
                     </div>
                     <div class="cat-cap">
                         <h2><a href="#">Personal Development</a></h2>
@@ -284,10 +325,10 @@
 
 
 
-            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="col-lg-3 col-md-6 col-xs-6">
                 <div class="single-cat text-center mb-30">
-                    <div class="cat-icon" style="width: 250px;height: 250px;border-radius: 50%;overflow: hidden;">
-                        <img src="assets/img/gallery/image5.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                    <div class="cat-icon" style="position: relative; width: 250px;height: 250px; border-radius:50%; overflow: hidden;">
+                        <img src="assets/img/gallery/image6.jpg" style="width: 100%;display: block;" alt="">
                     </div>
                     <div class="cat-cap">
                         <h2><a href="#">Crisis Management</a></h2>
@@ -295,10 +336,10 @@
                 </div>
             </div>  
 
-            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="col-lg-3 col-md-6 col-xs-6">
                 <div class="single-cat text-center mb-30">
-                    <div class="cat-icon" style="width: 250px;height: 250px;border-radius: 50%;overflow: hidden;">
-                        <img src="assets/img/gallery/image7.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                    <div class="cat-icon" style="position: relative; width: 250px;height: 250px; border-radius:50%; overflow: hidden;">
+                        <img src="assets/img/gallery/image7.jpg" style="width: 100%;display: block;" alt="">
                     </div>
                     <div class="cat-cap">
                         <h2><a href="#">Elderly Counselling</a></h2>
@@ -306,10 +347,10 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="col-lg-3 col-md-6 col-xs-6">
                 <div class="single-cat text-center mb-30">
-                    <div class="cat-icon" style="width: 250px;height: 250px;border-radius: 50%;overflow: hidden;">
-                        <img src="assets/img/gallery/image8.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                    <div class="cat-icon" style="position: relative; width: 250px;height: 250px; border-radius:50%; overflow: hidden;">
+                        <img src="assets/img/gallery/image8.jpg" style="width: 100%;display: block;" alt="">
                     </div>
                     <div class="cat-cap">
                         <h2><a href="#">Sex Counselling</a></h2>
@@ -318,10 +359,10 @@
             </div>
 
 
-            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="col-lg-3 col-md-6 col-xs-6">
                 <div class="single-cat text-center mb-30">
-                    <div class="cat-icon" style="width: 250px;height: 250px;border-radius: 50%;overflow: hidden;">
-                        <img src="assets/img/gallery/image9.jpg" style="width: 100%;height: 100%;object-fit: cover;" alt="">
+                    <div class="cat-icon" style="position: relative; width: 250px;height: 250px; border-radius:50%; overflow: hidden;">
+                        <img src="assets/img/gallery/image9.jpg" style="width: 100%;display: block;" alt="">
                     </div>
                     <div class="cat-cap">
                         <h2><a href="#">Couple and Marriage</a></h2>
@@ -369,9 +410,9 @@
 <div class="service-area">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="col-lg-3 col-md-6 col-xs-6">
                 <div class="single-cat text-center mb-50">
-                    <div class="cat-icon">
+                    <div class="cat-icon abc">
                         <img src="assets/img/icon/services1.svg" alt="">
                     </div>
                     <div class="cat-cap">
@@ -379,9 +420,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="col-lg-3 col-md-6 col-xs-6">
                 <div class="single-cat text-center mb-50">
-                    <div class="cat-icon">
+                    <div class="cat-icon abc">
                         <img src="assets/img/icon/services2.svg" alt="">
                     </div>
                     <div class="cat-cap">
@@ -389,9 +430,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="col-lg-3 col-md-6 col-xs-6">
                 <div class="single-cat text-center mb-50">
-                    <div class="cat-icon">
+                    <div class="cat-icon abc">
                         <img src="assets/img/icon/services3.svg" alt="">
                     </div>
                     <div class="cat-cap">
@@ -399,9 +440,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="col-lg-3 col-md-6 col-xs-6">
                 <div class="single-cat text-center mb-50">
-                    <div class="cat-icon">
+                    <div class="cat-icon abc">
                         <img src="assets/img/icon/services4.png" alt="" style="height: 110px;">
                     </div>
                     <div class="cat-cap">
@@ -498,7 +539,7 @@
     <div class="video-area section-bg2 d-flex align-items-center"  data-background="assets/img/gallery/video-bg.png">
         <div class="video-wrap position-relative">
             <div class="video-icon" >
-                <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0"><i class="fas fa-play"></i></a>
+                <a class="popup-video btn-icon" href="https://youtu.be/Z7mw9avlEGw?feature=shared"><i class="fas fa-play"></i></a>
             </div>
         </div>
     </div>
