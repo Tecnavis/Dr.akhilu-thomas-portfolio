@@ -183,6 +183,9 @@
     </header>
     <main>
         <!--? Slider Area Start-->
+        <div class="hero-wrapper mobile-background">
+            
+        
         <div class="slider-area" style="margin-top: -120px;margin-bottom: -80px;">
             <div class="slider-active dot-style">
                 <!-- Slider Single -->
@@ -231,16 +234,31 @@
         </div>    
     </div>
 </div>
+
+
+</div>
+
 <!-- Slider Area End -->
 <!--? About-2 Area Start -->
 
 
 <style>
+
+
     @media only screen and (max-width: 767px) {
         .about-area2 {
             margin-top: 50px; /* Adjust the value as needed */
         }
     }
+
+
+    /* @media only screen and (max-width: 768px) {
+    .mobile-background {
+        background-image: url('./assets/img/gallery/about001.jpg');
+        
+    }
+} */
+
 </style>
 
 <div class="about-area2 ">
@@ -524,7 +542,7 @@
         const interval = setInterval(() => {
             countingNumbersElement.textContent = count;
             count++;
-            if (count > 150) {
+            if (count > 5000) {
                 clearInterval(interval);
             }
         }, 10); // Change the interval (in milliseconds) between each number if needed
@@ -788,6 +806,12 @@
    <i class="fab fa-whatsapp"></i>
 </div></a>
 
+<!-- <a href="tel:123456789">
+    <div id="back-top">
+        <i class="fas fa-phone"></i>
+         
+    </div>
+</a> -->
 
 
 <!-- JS here -->
